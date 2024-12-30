@@ -1,0 +1,10 @@
+{
+    "users" : [
+        {
+            "id" : 1,
+            "name" : "Virat",
+            "email" : "virat@gmail.com",
+            "contact" : 7744556633
+        }
+    ]
+}

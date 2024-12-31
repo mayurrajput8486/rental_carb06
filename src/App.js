@@ -12,6 +12,7 @@ import User from './Components/Pages/User.jsx';
 import Admin from './Components/Pages/Admin.jsx';
 import Services from './Components/Pages/Services.jsx';
 import Footer from './Components/Pages/Footer.jsx';
+import Userdetails from './Components/Pages/Userdetails.jsx';
 function App() {
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
                 <Route path='/user' element={<User/>}></Route>
                 <Route path='/admin' element={<Admin/>}></Route>
                 <Route path='/services' element={<Services/>}></Route>
+                <Route path='/userdetails' element={<Userdetails/>}></Route>
             </Routes>
         </BrowserRouter>
         <Footer/>

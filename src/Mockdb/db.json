@@ -1,10 +1,30 @@
 {
-    "users" : [
-        {
-            "id" : 1,
-            "name" : "Virat",
-            "email" : "virat@gmail.com",
-            "contact" : 7744556633
-        }
-    ]
+  "users": [
+    {
+      "id": "54e1",
+      "fname": "Rohit",
+      "lname": "Sharma",
+      "contact": "7744556633",
+      "password": "Rohit@123",
+      "address": "Karve Nagar",
+      "gender": "Male",
+      "state": "Goa",
+      "city": "Goa",
+      "dob": "2024-12-11",
+      "email": "rohit@gmail.com"
+    },
+    {
+      "id": "64ef",
+      "fname": "Virat",
+      "lname": "Kohli",
+      "contact": "7744556633",
+      "password": "Virat@123",
+      "address": "Karve Nagar",
+      "gender": "Male",
+      "state": "Maharashtra",
+      "city": "Pune",
+      "dob": "2024-12-11",
+      "email": "vk18@gmail.com"
+    }
+  ]
 }

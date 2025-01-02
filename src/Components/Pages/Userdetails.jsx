@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 const Userdetails = () => {
 
     const [user,setUser] = useState([])
+    const navigate = useNavigate()
     const getData = async() =>{
         const response = await axios.get('http://localhost:8000/users')
         //console.log(response)
@@ -13,6 +15,10 @@ const Userdetails = () => {
     useEffect(()=>{
         getData()
     },[])
+
+    const handleLogout = () =>{
+        navigate('/admin')
+    }
   return (
     <div>
         <h1>User Details</h1>
@@ -53,6 +59,9 @@ const Userdetails = () => {
                     }
                 </tbody>
             </table>
+            <div>
+                <button className='btn btn-danger w-50' onClick={handleLogout}>Logout</button>
+            </div>
         </div>
     </div>
   )

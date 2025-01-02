@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import axios from 'axios'
 const User = () => {
 
-  const {register, handleSubmit, reset} = useForm()
+  const {register, handleSubmit, reset, formState: {errors}} = useForm()
 
   const addData = (data) =>{
     axios.post('http://localhost:8000/users',data)
@@ -32,14 +32,34 @@ const User = () => {
                         <div className="row">
                           <div className="col-md-6 mb-4">
                             <div data-mdb-input-init className="form-outline">
-                              <input type="text" id="form3Example1m" className="form-control form-control-lg" {...register('fname')}/>
+                              <input type="text" id="form3Example1m" className="form-control form-control-lg" 
+                              {...register('fname',{
+                                required : 'First Name is required',
+                                pattern : {
+                                  value : /^[A-Za-z\s]+$/,
+                                  message : 'Only Letters are allowed'
+                                }
+                              })}/>
                               <label className="form-label" htmlFor="form3Example1m">First name</label>
+                              {
+                                errors.fname && <p className='text-danger fw-bold'>{errors.fname.message}</p>
+                              }
                             </div>
                           </div>
                           <div className="col-md-6 mb-4">
                             <div data-mdb-input-init className="form-outline">
-                              <input type="text" id="form3Example1n" className="form-control form-control-lg" {...register('lname')}/>
+                              <input type="text" id="form3Example1n" className="form-control form-control-lg" 
+                                {...register('lname',{
+                                  required : 'Last Name is required',
+                                  pattern : {
+                                    value : /^[A-Za-z]+$/,
+                                    message : 'Only Letters are allowed'
+                                  }
+                                })}/>
                               <label className="form-label" htmlFor="form3Example1n">Last name</label>
+                              {
+                                errors.lname && <p className='text-danger fw-bold'>{errors.lname.message}</p> 
+                              }
                             </div>
                           </div>
                         </div>

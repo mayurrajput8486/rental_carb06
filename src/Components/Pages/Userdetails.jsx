@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, NavLink } from 'react-router-dom'
 const Userdetails = () => {
 
     const [user,setUser] = useState([])
@@ -36,6 +36,7 @@ const Userdetails = () => {
                         <th>State</th>
                         <th>City</th>
                         <th>Address</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -53,6 +54,10 @@ const Userdetails = () => {
                                     <td>{u.state}</td>
                                     <td>{u.city}</td>
                                     <td>{u.address}</td>
+                                    <td>
+                                        <NavLink to={`/user/update/${u.id}`}><button className='btn btn-warning me-3'><i className="bi bi-pencil-square"></i></button></NavLink>
+                                        <button className='btn btn-danger'><i className="bi bi-trash3-fill"></i></button>
+                                    </td>
                                 </tr>
                             )
                         })

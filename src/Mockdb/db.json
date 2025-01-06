@@ -12,32 +12,6 @@
       "city": "Goa",
       "dob": "2024-12-11",
       "email": "rohit@gmail.com"
-    },
-    {
-      "fname": "Virat",
-      "lname": "Kohli",
-      "contact": "7744556633",
-      "password": "Virat@123",
-      "address": "Karve Nagar, Pune",
-      "gender": "Male",
-      "state": "Rajasthan",
-      "city": "Jaipur",
-      "dob": "2024-12-12",
-      "email": "vk@gmail.com",
-      "id": "64ef"
-    },
-    {
-      "id": "2516",
-      "fname": "dfbgb",
-      "lname": "",
-      "contact": "",
-      "password": "",
-      "address": "",
-      "gender": null,
-      "state": "",
-      "city": "",
-      "dob": "",
-      "email": ""
     }
   ]
 }

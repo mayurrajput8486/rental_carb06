@@ -14,6 +14,7 @@ import Services from './Components/Pages/Services.jsx';
 import Footer from './Components/Pages/Footer.jsx';
 import Userdetails from './Components/Pages/Userdetails.jsx';
 import Updateuser from './Components/Pages/Updateuser.jsx';
+import Deleteuser from './Components/Pages/Deleteuser.jsx';
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,7 @@ function App() {
                 <Route path='/services' element={<Services/>}></Route>
                 <Route path='/userdetails' element={<Userdetails/>}></Route>
                 <Route path='/user/update/:userID' element={<Updateuser/>}></Route>
+                <Route path='/user/delete/:userID' element={<Deleteuser/>}></Route>
             </Routes>
         </BrowserRouter>
         <Footer/>

@@ -12,6 +12,19 @@
       "city": "Goa",
       "dob": "2024-12-11",
       "email": "rohit@gmail.com"
+    },
+    {
+      "id": "af44",
+      "fname": "Mayur",
+      "lname": "Rajput",
+      "contact": "",
+      "password": "Mayur@103",
+      "address": "",
+      "gender": null,
+      "state": "",
+      "city": "",
+      "dob": "",
+      "email": "mayur@gmail.com"
     }
   ]
 }

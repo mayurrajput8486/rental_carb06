@@ -37,13 +37,19 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <NavLink className="nav-link fs-5 fw-bold" to="/user">
                                     <i className="bi bi-person-fill me-2"></i>
-                                    User
+                                    Register
                                 </NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link fs-5 fw-bold" to="/admin">
                                     <i className="bi bi-incognito me-2"></i>
                                     Admin
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link fs-5 fw-bold" to="/userlogin">
+                                    <i className="bi bi-person me-2"></i>
+                                    User Login
                                 </NavLink>
                             </li>
                             <li className="nav-item">
